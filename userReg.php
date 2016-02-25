@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      $addressErr = "All fields are required!";
    } else {
      $address = test_input($_POST["address"]);
-     if (!preg_match("/^[a-zA-Z0-9 ]*$/",$name)) {
+     if (!preg_match("/^[a-zA-Z]*$/",$name)) {
        $nameErr = "Only letters, numbers and white space allowed"; 
      }
    }
